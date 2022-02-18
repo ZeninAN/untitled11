@@ -16,6 +16,7 @@ class ManagerProductTest {
     private Smartphone one = new Smartphone(3, "айфон", 4000, "apple");
     private Smartphone two = new Smartphone(4, "айфон", 6000, "apple");
 
+
     @Test
     public void search() {
         man.saveProduct(first);

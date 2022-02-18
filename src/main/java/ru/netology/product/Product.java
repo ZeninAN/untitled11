@@ -1,4 +1,4 @@
-package ru.netology.Product;
+package ru.netology.product;
 
 public class Product {
     private int id;

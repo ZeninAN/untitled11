@@ -1,7 +1,10 @@
+package ru.netology.manager;
+
 import org.junit.jupiter.api.Test;
-import ru.netology.Product.Book;
-import ru.netology.Product.Product;
-import ru.netology.Product.Smartphone;
+import ru.netology.manager.ManagerProduct;
+import ru.netology.product.Book;
+import ru.netology.product.Product;
+import ru.netology.product.Smartphone;
 import ru.netology.repository.ProductRepository;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -10,8 +13,8 @@ class ManagerProductTest {
     private ManagerProduct man = new ManagerProduct(new ProductRepository());
     private Book first = new Book(1, "крест", 455, "человек");
     private Book second = new Book(2, "книга", 245, "пушкин");
-    private Smartphone one = new Smartphone(3, "айфон", 4000, 45);
-    private Smartphone two = new Smartphone(4, "айфон", 6000, 23);
+    private Smartphone one = new Smartphone(3, "айфон", 4000, "apple");
+    private Smartphone two = new Smartphone(4, "айфон", 6000, "apple");
 
     @Test
     public void search() {

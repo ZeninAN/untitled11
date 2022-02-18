@@ -1,6 +1,8 @@
+package ru.netology.repository;
+
 import org.junit.jupiter.api.Test;
-import ru.netology.Product.Book;
-import ru.netology.Product.Product;
+import ru.netology.product.Book;
+import ru.netology.product.Product;
 import ru.netology.repository.ProductRepository;
 
 import static org.junit.jupiter.api.Assertions.*;

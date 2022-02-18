@@ -1,4 +1,6 @@
-import ru.netology.Product.Product;
+package ru.netology.manager;
+
+import ru.netology.product.Product;
 import ru.netology.repository.ProductRepository;
 
 public class ManagerProduct {
@@ -28,9 +30,7 @@ public class ManagerProduct {
         for (Product product : repository.findAll()) {
             if (matches(product, text)) {
                 Product[] tmp = new Product[result.length + 1];
-                for (int i = 0; i < result.length; i++) {
-                    tmp[i] = result[i];
-                }
+                System.arraycopy(result, 0, tmp, 0, result.length);
                 tmp[tmp.length - 1] = product;
                 result = tmp;// "добавляем в конец" массива result продукт product
             }

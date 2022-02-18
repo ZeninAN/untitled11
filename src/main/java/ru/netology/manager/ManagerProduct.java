@@ -6,8 +6,6 @@ import ru.netology.repository.ProductRepository;
 public class ManagerProduct {
     private ProductRepository repository;
 
-    public ManagerProduct() {
-    }
 
     public ManagerProduct(ProductRepository repository) {
         this.repository = repository;
